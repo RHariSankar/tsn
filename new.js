@@ -7,6 +7,9 @@ var db = new Datastore({filename:'store.db',autoload:true});
 
 app.set('view engine', 'ejs')
 
+
+app.set('port',process.env.PORT||5000)
+
 db.find({},function(err,result){
 	reso=result;
 })
@@ -97,6 +100,6 @@ db.find({name:a},function(err,result){
 })
 })
 
-app.listen(3000, function () {
+app.listen(app.get('port'), function () {
   console.log('Example app listening on port 3000!')
 })
