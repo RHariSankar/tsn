@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="signup.css">
+<style type="text/css">
+	a:link, a:visited{
+	color: white;
+	text-decoration-line: none;
+}
+
+
+</style>
+	
+</head>
+<body>
+<br>
+<form action="/newuser" method="get">
+name<br>
+<input type="text" name="uname" required>
+<br><br>password<br><input type="password" name="pw" required>
+<br><br>E-mail<br><input type="text" name="mail" required>
+<br><br>Mobile<br><input type="text" name="mob" required>
+<br><br>
+D.O.B
+<br>
+<input type="date" name="dob" required>
+<br>
+<br><br><input type="radio" name="gender" required>Male<input type="radio" name="gender">Female
+<br>
+<br>
+<input type="submit" name="">
+</form>
+<a href="/login"><button class="btn btn-warning" style="margin-top: 25px;">Login</button></a>
+
+</body>
+</html>

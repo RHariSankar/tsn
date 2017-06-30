@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>userprofile</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+<div class="container" style="margin-top: 150px;">
+
+
+<div class="row">
+
+<h3><%= res[0].name %> Profile</h3>
+<div class="col-md-3">
+<div class="thumbnail"> 
+<img alt="100%x200" src="../twitter.png" style="height: 200px; width: 100%; display: block;"> 
+<div class="caption"> 
+<h4><%= res[0].name %></h4>
+ <p>Email : <%= res[0].email %><br>Mobile : <%= res[0].mobile %><br></p>
+ </div></div></div>
+
+</div>
+</div>
+</body>
+</html>
